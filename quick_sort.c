@@ -6,7 +6,7 @@
 /*   By: blackrider <blackrider@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 19:41:58 by blackrider        #+#    #+#             */
-/*   Updated: 2024/01/24 15:03:37 by blackrider       ###   ########.fr       */
+/*   Updated: 2024/01/25 15:10:48 by blackrider       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,8 @@ int		*quick_sort_insert(int *data, int f, int r)
 {
 	int	q;
 
-    if (r - f < MAX_INS)
-        return (insert_sort(data, f, r));
+	if (r - f < MAX_INS)
+		return (insert_sort(data, f, r));
 	q = rand_part(data, f, r);
 	quick_sort(data, f, q - 1);
 	quick_sort(data, q + 1, r);
